@@ -2,37 +2,89 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 5fr repeat(2, 2fr);
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.tableHeader {
+  background-color: gray;
+  padding: 1rem;
   color: white;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.tableBody {
+  border-bottom: 1px solid gray;
+  padding: 0.5rem 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.completed {
+  background-color: lightcyan;
+}
+
+.addTaskBtn {
+  background-color: blue;
+  border: none;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.inputField {
+  border: none;
+  border-bottom: 1px solid gray;
+  min-width: 500px;
+  padding: 0.5rem;
+  outline: none;
+}
+
+.listTitle {
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+
+.listTitle:disabled {
+  border: none;
+  background-color: transparent;
+}
+
+.actionBtn {
+  border: none;
+  padding: 0.5rem;
+}
+
+.listWrapper {
+  margin: 1rem 2rem;
+  box-shadow: gray;
+}
+
+.btnWrapper {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.flexRow {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.label {
+  font-weight: bold;
+  text-align: left;
 }
